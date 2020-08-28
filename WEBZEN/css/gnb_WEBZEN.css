@@ -1,0 +1,340 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+} 
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #121212;
+}
+ul, li{
+    list-style: none;
+}
+img{
+    vertical-align: top;
+}
+a{
+    text-decoration: none;
+}
+.hide{
+    width:0;
+    height: 0;
+    overflow: hidden;
+}
+.header{
+    height: 107px;
+
+}
+.headerin{
+    width:1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top:20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.headerin h1 img{
+    display: block;
+    width:56px;
+    height: 46px;
+}
+.headerin .gnb ul{
+    display: flex;
+    position: absolute;
+    top:34px;
+    right: 50%;
+    margin-right: -550px;
+}
+.headerin .gnb li{
+    margin-right: 160px;
+}
+.headerin .gnb li a{
+    color: black;
+    font-size: 16px;
+}
+.headerin .utill a{
+    position: absolute;
+    top:34px;
+    right: -200px;
+    font-size: 15px;
+    color:black;
+}
+.headerin .utill{
+}
+.headerin .utill a:after{
+    content:"";
+    display: inline-block;
+    width:8px;
+    height: 8px;
+    border:2px solid black;
+    vertical-align: top;
+    transform: rotate(315deg);
+    border-top:none;
+    border-right: none;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+.container{
+    height: 900px;
+    position: relative;
+    max-width:1920px;
+    min-width:1400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.c-img{
+    position: absolute;
+    top:100px;
+    right: 50%;
+    margin-right: -900px;
+    width:891px;
+    height: 760px;
+    background-image: url(../img/860x760-sub-main-W.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: fadeInRight 2s both 1s;
+}
+.c-text{
+    position: absolute;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: left;
+    top:200px;
+    left: 350px;
+    animation: fadeInLeft 2s both 1s;
+}
+.c-text1{
+    position: absolute;
+    top:500px;
+    left: 350px;
+    font-size: 30px;
+    line-height: 48px;
+    font-weight: 400;
+    letter-spacing: -1.6px;
+    animation: fadeIn 3s both 1s;
+}
+.ceo-box{
+    height: 2600px;
+    background-color: black;
+    max-width:1920px;
+    min-width:1600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.ceo-img{
+    width:1920px;
+    height: 1000px;
+    background-image: url(../img/1920x1001-sub2-ceo.png);
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.text-all{
+    position: relative;
+}
+.w-text1{
+    position: absolute;
+    top:30px;
+    left: 50%;
+    margin-left: -100px;
+    font-size: 80px;
+    color:#fff;
+    font-weight: 500;
+}
+.w-text2{
+    position: absolute;
+    top:150px;
+    left: 50%;
+    margin-left: -240px;
+    font-size: 20px;
+    color:#bababa;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+.i-text1{
+    position: absolute;
+    top:500px;
+    left: 50%;
+    font-size: 80px;
+    color:#fff;
+    margin-left: -200px;
+    font-weight: 500;
+}
+.i-text2{
+    position: absolute;
+    top:620px;
+    left: 50%;
+    margin-left: -260px;
+    font-size: 20px;
+    color:#bababa;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+.cu-text{
+    position: absolute;
+    top:1000px;
+    left: 50%;
+    font-size: 80px;
+    color:#fff;
+    margin-left: -130px;
+    font-weight: 500;
+}
+.cu-text1{
+    position: absolute;
+    top:1120px;
+    left: 50%;
+    margin-left: -270px;
+    font-size: 20px;
+    color:#bababa;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+.map-box{
+    height: 700px;
+    position: relative;
+}
+.g-map{
+    width:1920px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.g-img{
+    position: absolute;
+    top:150px;
+    right: 50%;
+    margin-right: -800px;
+    width:787px;
+    height: 369px;
+    background-image: url(../img/787x369-sub2-map.png);
+}
+.g-text1{
+    position: absolute;
+    top:150px;
+    left: 200px;
+    font-size: 70px;
+    font-weight: 500;
+}
+.g-text2{
+    position: absolute;
+    top:300px;
+    left: 210px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.g-text3{
+    position: absolute;
+    top:370px;
+    left: 210px;
+    line-height: 35px;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+.g-lang {
+    display: flex;
+    position: relative;
+}
+.g-lang:before{
+    content:"";
+    display: block;
+    width:1500px;
+    height: 2px;
+    background-color: #ccc;
+    margin-left: 200px;
+}
+.g-lang li:before{
+    content:"";
+    display: block;
+    width:30px;
+    height: 30px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+.g-lang ul{
+    display: flex;
+    position: absolute;
+    top:-13px;
+    left: 200px;
+}
+.g-lang li{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-right: 300px;
+    
+}
+.footer{
+    margin-top:30px;
+    border-top: 1px solid #ccc;
+    height: 123px;
+    margin-top:150px;
+}
+.footerin{
+    width:1200px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+.footer1{
+        position: absolute;
+    top:55px;
+    right: 500px;
+    color:#ccc;
+}
+.footer2 {
+    display: flex;
+    position: absolute;
+    top:55px;
+    right: 150px;
+    
+}
+.footer2 a{
+    margin-left: 10px;
+    color:#ccc;
+}
+.footer2 a p{
+}
+.footer2 a p:after{
+    content:"";
+    display: inline-block;
+    width:1px;
+    height: 10px;
+    background-color: #ccc;
+    vertical-align: top;
+    margin-top:5px;
+    margin-left: 10px;
+}
+.footer2 a:last-child:after a{
+    display: none;
+}
+.footerimg{
+    display: flex;
+    position: absolute;
+    top:55px;
+    right: -20px;
+}
+.footerimg .you{
+    display: block;
+    width:30px;
+    height: 30px;
+    background-image: url(../img/%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%B6%81.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin-right: 10px;
+}
+.footerimg .fa{
+    display: block;
+    width:30px;
+    height: 30px;
+    background-image: url(../img/%EC%9D%B8%EC%8A%A4%ED%83%80%EA%B7%B8%EB%9E%A8.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+

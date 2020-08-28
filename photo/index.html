@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>밤하늘의별</title>
+    <link rel=" shortcut icon" href="/photo/img/favicon.ico">
+    <link rel=" shortcut icon" href="/photo/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- onload="drawimg();"-->
+
+    <div id="wrap">
+<div id="myModal" class="modal">
+ 
+      <!-- Modal content -->
+      <div class="modal-content">
+                <p style="text-align: center;"><span style="font-size: 14pt;"><b><span style="font-size: 20pt; font-family: paybooc-light">공지사항</span></b></span></p>
+                <p style="text-align: center; line-height: 1.5;"><br>현재 보고계신 포토폴리오는 상업적포토폴리오가 아닌 취업용 포토폴리오입니다.
+                <br> 이미지나,폰트 출처는 맨밑에 출처적어놓았습니다.</p>
+                <p><br /></p>
+            <div style="cursor:pointer;background-color:#DDDDDD;text-align: center;padding-bottom: 10px;padding-top: 10px;" onClick="close_pop();">
+                <span class="pop_bt" style="font-size: 13pt;" >
+                     닫기
+                </span>
+            </div>
+      </div>
+ 
+    </div>
+
+        <canvas id="canvas"></canvas>
+        <div class="ground-img">
+            <div id="light"></div>
+            <div id="moon"></div>
+            <div id="ground"></div>
+            <div id="house"></div>
+            <div id="smoke"><span></span></div>
+        </div>
+        <div class="box">
+
+            <div class="profill">
+                <div class="p-text" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1000">
+                    <p class="hellot">안녕하세요.<br><span>김동훈</span>입니다.</p><br>
+                    <div class="kimdonghun"><img src="img/Untitled-1.png" alt="사진"></div>
+                    <p class="textc">
+                        사용자의 편의와 신속하고 정확하게 친화적인 인터페이스 구성을하여<br>
+                        쉽게 페이지를 찾아볼수있도록 끈기과 열정의 바탕으로 앞으로성장하고<br>
+                        기대가될수있는 웹퍼블리셔되겠습니다.<br></p>
+
+                    <div class="p-tel"> Tel. 010-9355-5149</div>
+                    <div class="p-mail">E-mail. lmlml96@naver.com</div>
+                </div>
+
+                <div class="p-text1" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="1000">
+                    <div class="p-text2">웹 퍼블리셔,<br><span>김동훈</span>에대해</div>
+                    <div class="p-list">
+                        <ul>
+                            <li class="p-list1">잠재력 : <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="point"></span></li>
+                            <li class="p-list2">검색능력 : <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="point"></span>
+                                <span class="point"></span></li>
+                            <li class="p-list3">완벽주의 : <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="point"></span>
+                                <span class="point"></span></li>
+                            <li class="p-list4">기획력 : <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="point"></span></li>
+                            <li class="p-list5">타고난 아이디어 : <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="point"></span>
+                                <span class="point"></span></li>
+                            <li class="p-list6">감각 / 센스 : <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="point"></span>
+                                <span class="point"></span></li>
+                            <li class="p-list7">감수성 : <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span></li>
+                            <li class="p-list8">먹방 : <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="point"></span>
+                                <span class="point"></span></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="profill2">
+
+            </div>
+
+        </div>
+        <h1>My<em>Strength</em></h1>
+        <div class="contents">
+            <section id="section1" class="content-item">
+                <span class="content-item-num">01</span>
+                <div class="content-item-imgWrap">
+                    <div class="content-item-img" data-delay="100" data-aos="fade-up-right" data-aos-duration="1000">
+                        <img src="img/so01.jpg" alt="이미지">
+                    </div>
+                </div>
+                <div class="content-item-desc" data-delay="200" data-aos="zoom-in" data-aos-duration="1000">
+                    <span>높은 목표를 세우고, 스스로 채찍질한다.</span>
+                </div>
+            </section>
+
+
+            <section id="section2" class="content-item">
+                <span class="content-item-num">02</span>
+                <div class="content-item-imgWrap">
+                    <div class="content-item-img" data-delay="100" data-aos="fade-up-left" data-aos-duration="1000">
+                        <img src="img/so02.jpg" alt="이미지">
+                    </div>
+                </div>
+                <div class="content-item-desc" data-delay="500" data-aos="zoom-in" data-aos-duration="1000">
+                    <span>결과도 중요하지만, 과정을 더 중요하게 생각한다.</span>
+                </div>
+            </section>
+            <section id="section3" class="content-item">
+                <span class="content-item-num">03</span>
+                <div class="content-item-imgWrap">
+                    <div class="content-item-img" data-delay="100" data-aos="fade-up-left" data-aos-duration="1000">
+                        <img src="img/so03.jpg" alt="이미지">
+                    </div>
+                </div>
+                <div class="content-item-desc" data-delay="500" data-aos="zoom-in" data-aos-duration="1000">
+                    <span>매 순간에 최선을 다하고, 끊임없이 변화한다.</span>
+                </div>
+            </section>
+            <section id="section4" class="content-item">
+                <span class="content-item-num">04</span>
+                <div class="content-item-imgWrap">
+                    <div class="content-item-img content-i" data-delay="100" data-aos="fade-up-left" data-aos-duration="1000">
+                        <img src="img/so04.jpg" alt="이미지">
+                    </div>
+                </div>
+                <div class="content-item-desc" data-delay="500" data-aos="zoom-in" data-aos-duration="1000">
+                    <span>모든지 기본을 중요하게 생각한다.</span>
+                </div>
+            </section>
+
+
+            <section id="section5">
+                <div class="skill">
+                    <p class="skill-text">
+                        MY SKILL
+                    </p>
+                    <img src="img/Untitled-3.png">
+                </div>
+            </section>
+            <section id="section6">
+                <div class="web-d">
+                    <p class="web-d-t">
+                        WEB DESGIN LIST
+                    </p>
+                    <div class="web-content">
+                        <div class="web-img" data-aos="fade-right" data-aos-duration="1000">
+                            <img src="img/web1.png"></div>
+                        <div class="web-t" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="web-t-num">01</div>
+                            <div class="web-t-title">Shinsegae International.</div>
+                            <div class="web-t-content">
+                                <p><span>웹표준을 준수하여</span> 반응형사이트를 만들어보았습니다.<br>
+                                    사이트에는 슬라이드기능, 메뉴드롭다운 ,사이드메뉴,등<br>
+                                    여러기능을 구현해보았습니다.
+                                </p>
+                            </div>
+                            <div class="web-t-sub">
+                                <p class="web-t-color">
+                                    COLOR : <span class="color1"></span><span class="color2"></span>
+                                </p>
+                                <p class="web-t-viewport">
+                                    VIEWPORT: DESTTOP
+                                </p>
+                                <p class="web-t-day">
+                                    DAY: 7DAY
+                                </p>
+                            </div>
+                            <div class="web-t-category">
+                                <div class="box-title">
+                                    <ul>
+                                        <li>
+                                            <p class="b-t1">CATEGORY</p>
+                                        </li>
+                                        <li>
+                                            <p class="b-t1">SOURCE</p>
+                                        </li>
+                                        <li>
+                                            <p class="b-t1">LIBRARY</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="box-content">
+                                    <ul class="c-n1">
+                                        <li>
+                                            <p class="c-t1">HTML</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t1">index.html</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t1">HTML5</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="c-n2">
+                                        <li>
+                                            <p class="c-t2">CSS</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t2">style.css</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t2">CSS3</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="c-n3">
+                                        <li>
+                                            <p class="c-t3">Jquery</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t3">main.js</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t3">JavaScript</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="c-n4">
+                                        <li>
+                                            <p class="c-t4">FullPage</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t4">main.js</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t4">CSS3</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="c-n5">
+                                        <li>
+                                            <p class="c-t4">Slick.js</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t4">main.js</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t4">JavaScript</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="c-n6">
+                                        <li>
+                                            <p class="c-t4">Animate.css</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t4">style.css</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t4">CSS</p>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                                <div class="viewsite">
+                                    <p class="vi-site">
+                                        <a href="../Shinsegae/index1.html" target="_blank">VIEW SITE</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="section7">
+                <div class="web-d">
+                    <div class="web-content">
+                        <div class="web-t" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="web-t-num">02</div>
+                            <div class="web-t-title">WEBZEN</div>
+                            <div class="web-t-content">
+                                <p><span>웹표준을 준수하여</span> 웹사이트를 만들어보았습니다.<br>
+                                    처음으로 만든 PC홈페이지라 가장 뜻깊고 가장기억에많이남은<br>
+                                    홈페이지입니다. 각글자마다 transition 을 활용해 fadein하게<br>
+                                    하였고 fullpage로 스크롤내릴때도 리모델링하였습니다.
+
+                                </p>
+                            </div>
+                            <div class="web-t-sub">
+                                <p class="web-t-color">
+                                    COLOR : <span class="color1"></span>
+                                    <span class="color2"></span>
+                                    <span class="color3"></span>
+                                    <span class="color4"></span>
+                                </p>
+                                <p class="web-t-viewport">
+                                    VIEWPORT: DESTTOP
+                                </p>
+                                <p class="web-t-day">
+                                    DAY: 3DAY
+                                </p>
+                            </div>
+                            <div class="web-t-category">
+                                <div class="box-title">
+                                    <ul>
+                                        <li>
+                                            <p class="b-t1">CATEGORY</p>
+                                        </li>
+                                        <li>
+                                            <p class="b-t1">SOURCE</p>
+                                        </li>
+                                        <li>
+                                            <p class="b-t1">LIBRARY</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="box-content">
+                                    <ul class="c-n1">
+                                        <li>
+                                            <p class="c-t1">HTML</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t1">index.html</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t1">HTML5</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="c-n2">
+                                        <li>
+                                            <p class="c-t2">CSS</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t2">style.css</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t2">CSS3</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="c-n3">
+                                        <li>
+                                            <p class="c-t3">Jquery</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t3">main.js</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t3">JavaScript</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="c-n4">
+                                        <li>
+                                            <p class="c-t4">FullPage</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t4">main.js</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t4">CSS3</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="viewsite">
+                                    <p class="vi-site">
+                                        <a href="../WEBZEN/index.html" target="_blank">VIEW SITE</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="web-img" data-aos="fade-right" data-aos-duration="1000">
+                            <img src="img/web2.png"></div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="section8">
+                <div class="web-d">
+                    <div class="web-content">
+                        <div class="web-img" data-aos="fade-right" data-aos-duration="1000">
+                            <img src="img/web3.png"></div>
+                        <div class="web-t" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="web-t-num">03</div>
+                            <div class="web-t-title">LOTTE HOTEL</div>
+                            <div class="web-t-content">
+                                <p><span>웹표준을 준수하여</span> 반응형사이트를 만들어보았습니다.<br>
+                                    사이트에는 슬라이드기능, 메뉴드롭다운 ,사이드메뉴,등<br>
+                                    여러기능을 구현해보았습니다.
+                                </p>
+                            </div>
+                            <div class="web-t-sub">
+                                <p class="web-t-color">
+                                    COLOR : <span class="color1"></span>
+                                    <span class="color2"></span>
+                                    <span class="color3"></span>
+                                    <span class="color4"></span>
+                                </p>
+                                <p class="web-t-viewport">
+                                    VIEWPORT: DESTTOP
+                                </p>
+                                <p class="web-t-day">
+                                    DAY: 7DAY
+                                </p>
+                            </div>
+                            <div class="web-t-category">
+                                <div class="box-title">
+                                    <ul>
+                                        <li>
+                                            <p class="b-t1">CATEGORY</p>
+                                        </li>
+                                        <li>
+                                            <p class="b-t1">SOURCE</p>
+                                        </li>
+                                        <li>
+                                            <p class="b-t1">LIBRARY</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="box-content">
+                                    <ul class="c-n1">
+                                        <li>
+                                            <p class="c-t1">HTML</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t1">index.html</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t1">HTML5</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="c-n2">
+                                        <li>
+                                            <p class="c-t2">CSS</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t2">style.css</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t2">CSS3</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="c-n3">
+                                        <li>
+                                            <p class="c-t3">Jquery</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t3">main.js</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t3">JavaScript</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="c-n4">
+                                        <li>
+                                            <p class="c-t4">Slick</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t4">main.js</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t4">JavaScript</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="viewsite">
+                                    <p class="vi-site">
+                                        <a href="../lotte/index.html" target="_blank">VIEW SITE</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section9">
+                <div class="web-d">
+                    <div class="web-content">
+
+                        <div class="web-t" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="web-t-num">04</div>
+                            <div class="web-t-title">INJE UNIVERSITY PALK HOSPITAL</div>
+                            <div class="web-t-content">
+                                <p><span>웹표준을 준수하여</span> 반응형사이트를 만들어보았습니다.<br>
+                                    컨텐츠가많고 고객분들에게 어떻게하면 한눈에편하게볼수있을까<br>
+                                    고민하면서 각 컨텐츠마다 색깔을 넣고 정렬되게 만들어보았습니다.
+
+
+                                </p>
+                            </div>
+                            <div class="web-t-sub">
+                                <p class="web-t-color">
+                                    COLOR : <span class="color1"></span>
+                                    <span class="color2"></span>
+                                    <span class="color3"></span>
+                                    <span class="color4"></span>
+                                    <span class="color5"></span>
+                                </p>
+                                <p class="web-t-viewport">
+                                    VIEWPORT: DESTTOP
+                                </p>
+                                <p class="web-t-day">
+                                    DAY: 8DAY
+                                </p>
+                            </div>
+                            <div class="web-t-category">
+                                <div class="box-title">
+                                    <ul>
+                                        <li>
+                                            <p class="b-t1">CATEGORY</p>
+                                        </li>
+                                        <li>
+                                            <p class="b-t1">SOURCE</p>
+                                        </li>
+                                        <li>
+                                            <p class="b-t1">LIBRARY</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="box-content">
+                                    <ul class="c-n1">
+                                        <li>
+                                            <p class="c-t1">HTML</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t1">index.html</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t1">HTML5</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="c-n2">
+                                        <li>
+                                            <p class="c-t2">CSS</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t2">style.css</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t2">CSS3</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="c-n3">
+                                        <li>
+                                            <p class="c-t3">Jquery</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t3">main.js</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t3">JavaScript</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="c-n4">
+                                        <li>
+                                            <p class="c-t4">Slick</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t4">main.js</p>
+                                        </li>
+                                        <li>
+                                            <p class="c-t4">JavaScript</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="viewsite">
+                                    <p class="vi-site vi-s">
+                                        <a href="../paik/index.html" target="_blank">VIEW SITE</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="web-img" data-aos="fade-left" data-aos-duration="1500">
+                            <img src="img/web4.png"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section id="section10">
+            <div class="cont-1">
+                <div class="cont-box">
+                    <div class="cont-item-ani">
+                        <p class="cont-name">animate.css</p>
+                        <div class="cont-su">
+                            <p class="cont-su1">ex) animate.css</p>
+                            <input type="button" value="Click" name="btName" class="bt">
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="ani-text">animate.css</div>
+                <div class="ani-text1">Click을 누르게되면 swing이라는 animate.css의 플러그인이 실행이됩니다,<br> Keyframe대신 간편하게 애니매이션을 사용할수있는 장점이있습니다.</div>
+            </div>
+            <div class="cont-2">
+                <div class="cont2-box">
+                    <div id="pullpage-box">
+                        <p class="pullpage-name">svg-wrapper</p>
+                        <div class="svg-wrapper">
+                            <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="shape" height="60" width="320" />
+                            </svg>
+                            <div class="text">HOVER</div>
+                        </div>
+                        <div class="fullpage-name">
+                            <p class="SGV-Wapper">SGV-Wapper</p>
+                        </div>
+                        <div class="fullpage-text">
+                            SGV를 사용하여 width:320px height:60px 틀을만들고<br> hover가되었을때 전체를감싸는 상자를만들수있게 만들었습니다.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cont-3">
+                <div class="cont3-box">
+                    <div class="aos-box">
+                        <p class="aos-name">AOS.css</p>
+                    </div>
+                    <div class="aos-t">AOS.css</div>
+                    <div class="aos-text">AOS.css</div>
+                    <div class="aos-text1">
+                        AOS.css로 이용해 여러 애니매이션을 구현할수있습니다.<br>
+                        data-aos="fade-left"<br>
+                        data-aos-duration="1500" 을이용해<br> left에서 fadein시키고 1500만큼 딜레이를 주어 AOS.CSS의 <br>애니매이션을 구현하였습니다.
+
+                    </div>
+                </div>
+            </div>
+            <div class="cont-4">
+                <div class="cont4-box">
+                    <div class="typewriter-box">
+
+                    </div>
+                    <p class="typewriter-name">TEXT TYPING</p>
+                    <div class="typewriter-t">
+                        <button class="click">click</button>
+                        <button type="button" id="reset" value="reset">리셋</button>
+
+                        <p class="line-1 anim-typewriter">Animation typewriter</p>
+                    </div>
+                    <div class="typewriter-text">TEXT TYPING</div>
+                    <div class="typewriter-text1">animation와 @keyframes을 활용하여<br>글자가 하나씩 적혀지는 animation을 구현해보았습니다.<br>
+                        blinktextCursor 500ms 씩 깜빡이게하고<br> width:0 ~ 240px만큼 늘어나게 keyframes으로<br> 한글자씩 늘어나게만들어보았습니다.
+
+                    </div>
+                </div>
+            </div>
+            <div class="cont-5">
+                <div class="cont5-box">
+                    <div class="canvas1">CANVAS</div>
+                    <canvas id="mycanvas" width="300" height="300"></canvas>
+                </div>
+            </div>
+        </section>
+        <div class="end">
+            <div class="endin">
+                <div class="ending">
+                    <p class="title">Thanks for<br> watching to the end</p>
+                    <p class="tel">TEL: 010 - 9355 - 5149</p>
+                    <p class="mail">MAIL: lmlml96@naver.com</p>
+                    <p class="name"><span>PRODUCER</span></p>
+                    <p class="name-1">KIM DONG HUN</p>
+                    <p class="design"><span>DESIGN</span></p>
+                    <p class="design-1">KIM DONG HUN</p>
+                    <p class="planning"><span>PLANNING</span></p>
+                    <p class="planning-1">KIM DONG HUN</p>
+                    <p class="development"><span>DEVELOPMENT</span></p>
+                    <p class="development-1">KIM DONG HUN</p>
+                    <p class="categoy"><span>CATEGORY</span></p>
+                    <p class="html">HTML</p>
+                    <p class="CSS3">CSS3</p>
+                    <p class="animate">ANIATE.CSS</p>
+                    <p class="javascript">JAVASCRIPT</p>
+                    <p class="jquery">JQUERY</p>
+                    <p class="AOS">AOS.CSS</p>
+                    <p class="SVG">SVG-WAPPER</p>
+                    <p class="type">TYPEWRITER</p>
+                    <p class="slick">SLICK.JS</p>
+                    <p class="canvas">CANVAS</p>
+
+                    <p class="font"><span>FONT/IMG</span></p>
+                    <p class="paybooc">Paybooc-bold </p>
+                    <p class="paybooc1">Paybooc-right</p>
+                    <p class="paybooc-pa"><a href="">https://noonnu.cc/font_page/454</a></p>
+                    <p class="orbitron">Orbitron</p>
+                    <p class="orbitron-pa"><a href="">https://fonts.google.com/specimen/Orbitron</a></p>
+                    <p class="img1">IMG</p>
+                    <p class="img-img"><a href="">https://pixabay.com/ko/</a></p>
+
+                    <p class="help"><span>도움주신분들</span></p>
+                    <p class="home">울산그린컴퓨터</p>
+                    <p class="name1">KIM JIN ME</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footerin">
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/main3.js"></script>
+</body>
+
+</html>
